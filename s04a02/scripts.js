@@ -4,10 +4,11 @@ let raiz = Number(prompt("Qual o valor da raiz?"));
 function progressaoAritmetica(valorInicial, raiz){
     progressao = [];
     progressao[0] = valorInicial;
-    for (i = 0; i < 10; i++){
+    for (i = 0; i < 9; i++){
         console.log(progressao[i]);
         progressao[i+1] = progressao[i] + raiz;
     }
+    return progressao;
 }
 
-progressaoAritmetica(valorInicial, raiz);
+console.log(progressaoAritmetica(valorInicial, raiz));

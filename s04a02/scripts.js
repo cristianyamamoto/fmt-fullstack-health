@@ -5,7 +5,6 @@ function progressaoAritmetica(valorInicial, raiz){
     progressao = [];
     progressao[0] = valorInicial;
     for (i = 0; i < 9; i++){
-        console.log(progressao[i]);
         progressao[i+1] = progressao[i] + raiz;
     }
     return progressao;

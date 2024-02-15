@@ -12,22 +12,28 @@
 <body>
     <h1>Cadastre-se</h1>
 
-    <form>
+    <form id="formularioCadastro">
         <span>Nome: </span>
-        <input name="nome" type="text"/>
+        <input id="nome" type="text" required/>
         <br>
 
         <span>E-mail: </span>
-        <input name="email" type="email"/>
+        <!-- <input name="email" type="email"/> -->
+        <input id="email" placeholder="user@email.com" type="text" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.?([a-z]+)?$">
         <br>
 
         <span>senha: </span>
         <!-- para adictionar caracteres especiais (?=.*[$*&@#]) -->
-        <input name="senha" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z$*&@#]{8,}$"/> 
+        <input id="senha" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z$*&@#]{8,}$"/> 
+        <br>
+
+        <span>confirmar senha: </span>
+        <!-- para adictionar caracteres especiais (?=.*[$*&@#]) -->
+        <input id="confirmarSenha" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z$*&@#]{8,}$"/> 
         <br>
 
         <span>Data de Nascimento: </span>
-        <input name="dataNascimento" type="date"/>
+        <input id="dataNascimento" type="date"/>
         <br>
 
         <span>Você tem filhos(as)?</span>
@@ -35,12 +41,13 @@
         <br>
 
         <span>Quantidade de filhos(as): </span>
-        <input id="qtdFilhos" type="number" disabled>
+        <input id="qtdFilhos" type="number" min="1" value="0" disabled>
         <br>
 
-        <!-- <button id="botaoEnviar" type="submit">Enviar</button> -->
+        <button id="botaoEnviar" type="submit">Enviar</button>
     </form>
-    <button id="botaoEnviar" type="submit">Enviar</button>
+
+    <!-- <button id="botaoEnviar" type="submit">Enviar</button> -->
 
 </body>
 

@@ -1,8 +1,107 @@
-ul {
-    list-style-type: none;
-    padding: 0;
+body {
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    font-family: 'Oxygen', sans-serif;
 }
 
-/* button {
+/** HEADER **/
+
+#header-nav {
+    background-color: grey;
+    border-radius: 0;
+    border: 5px solid black;
+    border-width: 5px 0 5px 0px;
+    margin-bottom: 10px;
+}
+
+.navbar-header {
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.navbar-header h1 {
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    text-decoration: none;
+}
+
+.navbar-header a {
+    text-decoration:none;
+}
+
+.navbar-header a:hover, .navbar-header a:focus {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+/* END HEADER */
+
+
+/* MAIN CONTENT */
+
+#main-content ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.25em;
+    /* text-align: center; */
+}
+
+.tile {
+    background-color: grey;
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    margin: 10px auto 10px auto; /* topo | direita | inferior | esquerda */
     padding: 10px;
-} */
+    border-radius: 10px;
+}
+
+.delete-button {
+    border: 1px solid black;
+    text-align: center;
+    width: 22px;
+    height: 30px;
+    padding: 0;
+    margin-left: auto;
+}
+
+.delete-button:hover {
+    background-color: red;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: wrap;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #a2a2a2;
+    background-color: #a2a2a2 ;
+  }
+
+.checked {
+    text-decoration: line-through;
+}
+
+/* END MAIN CONTENT */
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+@media (min-width: 1850px) {
+    .container {
+        width: 1800px;
+    }
+}

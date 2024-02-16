@@ -59,8 +59,10 @@ function habilitaInputQtdFilhos () {
     if (temFilhos.checked) {
         qtdFilhos.disabled = false;
         qtdFilhos.value = "1";
+        qtdFilhos.required = true;
     } else {
         qtdFilhos.disabled = true;
         qtdFilhos.value = "0";
+        qtdFilhos.required = false;
     }
 }

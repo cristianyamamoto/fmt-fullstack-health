@@ -1,6 +1,6 @@
 # Repositório do Floripa Mais Tec - Turma FullStack [Health]
 
-* Arquivos separados em semana e aula - s03a02 (terceira semana, segundo dia de aula)
+* Arquivos separados em semana e aula - ex.: s03a02 (terceira semana, segunda aula, dia 26/01/2024)
 
 ## S01A04 - Introdução a Java
 
@@ -41,3 +41,8 @@
 
 * [GitHub Folders - s05a05](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s05a05)
 * [GitHub Pages - s05a05](https://cristianyamamoto.github.io/fmt-fullstack-health/s05a05/)
+
+## S06A03 - Formulário de Cadastro
+
+* [GitHub Folders - s06a03](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s06a03)
+* [GitHub Pages - s06a03](https://cristianyamamoto.github.io/fmt-fullstack-health/s06a03/)

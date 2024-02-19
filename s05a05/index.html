@@ -23,59 +23,61 @@
 <body>
     <header>
         <nav id="header-nav" class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="index.html">
-                        <h1>Lista de Afazeres - To Do List</h1>
-                    </a>
-                </div>
-            </div><!-- .container -->
+            <div class="navbar-header">
+                <a href="index.html">
+                    <h1>Lista de Afazeres - To Do List</h1>
+                </a>
+            </div>
         </nav><!-- #header-nav -->
     </header>
 
     <div id="main-content" class="container">
 
-        <div class="col-12">
-            <div id="to-do-list" class="tile">
-                <ul>
-                    <div class="text-center">
-                        <input id="tarefa" type="text">
-                        <button id="botaoAdicionar">Adicionar à lista</button>
+        <div id="to-do-list" class="tile col-12">
+            <ul>
+                <div class="text-center">
+                    <input id="tarefa" type="text" placeholder="Tarefa...">
+                    <button id="botaoAdicionar">Adicionar à lista</button>
+                </div>
+
+                <li id="tarefa-1">
+                    <div class="flex-box">
+                        <div>
+                            <input type="checkbox" class="caixaSelecaoTarefa">
+                            <span>Tarefa 1</span>
+                        </div>
+                        <button class="delete-button"><i class='bx bxs-trash'></i></button>
                     </div>
+                </li>
 
-                    <li id="tarefa-1">
-                        <div class="flex-box">
-                            <div>
-                                <input type="checkbox" class="caixaSelecaoTarefa">
-                                <span>Tarefa 1</span>
-                            </div>
-                            <button class="delete-button"><i class='bx bxs-trash'></i></button>
+                <li id="tarefa-2">
+                    <div class="flex-box">
+                        <div>
+                            <input type="checkbox" class="caixaSelecaoTarefa">
+                            <span>Tarefa 2</span>
                         </div>
-                    </li>
+                        <button class="delete-button"><i class='bx bxs-trash'></i></button>
+                    </div>
+                </li>
 
-                    <li id="tarefa-2">
-                        <div class="flex-box">
-                            <div>
-                                <input type="checkbox" class="caixaSelecaoTarefa">
-                                <span>Tarefa 2</span>
-                            </div>
-                            <button class="delete-button"><i class='bx bxs-trash'></i></button>
+                <li id="tarefa-3">
+                    <div class="flex-box">
+                        <div>
+                            <input type="checkbox" class="caixaSelecaoTarefa">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit posuere dui sit
+                                amet cursus. Integer eget iaculis libero. Duis at eros vitae ante scelerisque facilisis
+                                non sit amet diam. Vestibulum pretium fermentum arcu eu tincidunt. Nullam posuere ut leo
+                                non posuere. Sed at nunc id dui aliquet pretium non vitae dui. Fusce id mi sem. In
+                                aliquam ornare ligula vehicula volutpat. Nam facilisis eget augue non rutrum. Nunc vel
+                                eros sed purus gravida feugiat. Aenean molestie mi sit amet enim auctor, id malesuada
+                                neque placerat. Nam at malesuada risus, quis sagittis turpis.
+                            </span>
                         </div>
-                    </li>
+                        <button class="delete-button"><i class='bx bxs-trash'></i></button>
+                    </div>
+                </li>
 
-                    <li id="tarefa-3">
-                        <div class="flex-box">
-                            <div>
-                                <input type="checkbox" class="caixaSelecaoTarefa">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit posuere dui sit amet cursus. Integer eget iaculis libero. Duis at eros vitae ante scelerisque facilisis non sit amet diam. Vestibulum pretium fermentum arcu eu tincidunt. Nullam posuere ut leo non posuere. Sed at nunc id dui aliquet pretium non vitae dui. Fusce id mi sem. In aliquam ornare ligula vehicula volutpat. Nam facilisis eget augue non rutrum. Nunc vel eros sed purus gravida feugiat. Aenean molestie mi sit amet enim auctor, id malesuada neque placerat. Nam at malesuada risus, quis sagittis turpis.
-                                </span>
-                            </div>
-                            <button class="delete-button"><i class='bx bxs-trash'></i></button>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
+            </ul>
         </div>
 
     </div><!-- #main-content -->

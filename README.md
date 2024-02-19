@@ -42,6 +42,25 @@
 * [GitHub Folders - s05a05](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s05a05)
 * [GitHub Pages - s05a05](https://cristianyamamoto.github.io/fmt-fullstack-health/s05a05/)
 
+## S06A02
+
+### Calculadora Simples
+
+* [GitHub Folders - s06a02](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s06a02)
+* [GitHub Pages - s06a02](https://cristianyamamoto.github.io/fmt-fullstack-health/s06a02/calculadora_simples.html)
+
+### Estação do Ano
+
+* [GitHub Folders - s06a02](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s06a02)
+* [GitHub Pages - s06a02](https://cristianyamamoto.github.io/fmt-fullstack-health/s06a02/estacao_do_ano.html)
+
+
+### Lista de Mercado
+
+* [GitHub Folders - s06a02](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s06a02)
+* [GitHub Pages - s06a02](https://cristianyamamoto.github.io/fmt-fullstack-health/s06a02/lista_mercado.html)
+
+
 ## S06A03 - Formulário de Cadastro
 
 * [GitHub Folders - s06a03](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s06a03)

@@ -1,39 +1,52 @@
 let botaoAdicionar = document.querySelector("#botaoAdicionar");
 botaoAdicionar.addEventListener("click", adicionarTarefa);
 
+let tarefa = document.querySelector("#tarefa");
+tarefa.setCustomValidity("Preencha o campo da tarefa!");
+
+let contadorTarefas = document.querySelector("#contadorTarefas");
+contadorTarefas.innerHTML = document.querySelectorAll("#to-do-list ul li").length;
+
 function adicionarTarefa() {
-    let tarefa = document.querySelector("#tarefa").value;
-    if(tarefa){
+    if(tarefa.value){
         let listaDeAfazeres = document.querySelector("#to-do-list ul");
-
-        console.log(listaDeAfazeres.querySelectorAll("li").length);
-
         let listItem = document.createElement("li");
         listItem.id = "tarefa-" + (listaDeAfazeres.querySelectorAll("li").length + 1);
         listItem.innerHTML = 
         `<div class="flex-box">
             <div>
                 <input type="checkbox" class="caixaSelecaoTarefa">
-                <span>${tarefa}</span>
+                <span>${tarefa.value}</span>
             </div>
             <button class="delete-button"><i class='bx bxs-trash'></i></button>
         </div>
         `;
         listaDeAfazeres.appendChild(listItem);
-        // console.log(listaDeAfazeres);
 
         let caixa = listItem.querySelector(".caixaSelecaoTarefa")
         caixa.addEventListener('change', function(){
             this.parentNode.classList.toggle('checked');
         });
+        // caixa.onchange = function() {
+        //     caixa.parentNode.classList.toggle('checked');
+        // };
         
         let botaoDeletar = listItem.querySelector('.delete-button');
         botaoDeletar.addEventListener('click', function(){
-            this.closest("li").remove();
+            if (confirm("A tarefa será excluída permanentemente!")) {
+                this.closest("li").remove();
+                contadorTarefas.innerHTML = Number(contadorTarefas.innerHTML) - 1;
+                // contadorTarefas.innerHTML = document.querySelectorAll("#to-do-list ul li").length;
+            } 
         });
 
-        document.querySelector("#tarefa").value = "";
+        tarefa.value = "";
+        contadorTarefas.innerHTML = Number(contadorTarefas.innerHTML) + 1;
+        // contadorTarefas.innerHTML = document.querySelectorAll("#to-do-list ul li").length;
+    } else {
+        tarefa.reportValidity();
     }
+    tarefa.focus();
 }
 
 let caixas = document.querySelectorAll('.caixaSelecaoTarefa');
@@ -44,5 +57,9 @@ Array.from(caixas).forEach(caixa => caixa.addEventListener('change', function(){
 
 let botoesDeletar = document.querySelectorAll('.delete-button');
 Array.from(botoesDeletar).forEach(botao => botao.addEventListener('click', function(){
-    this.closest("li").remove();
+    if (confirm("A tarefa será excluída permanentemente!")) {
+        this.closest("li").remove();
+        contadorTarefas.innerHTML = Number(contadorTarefas.innerHTML) - 1;
+        // contadorTarefas.innerHTML = document.querySelectorAll("#to-do-list ul li").length;
+    } 
 }));

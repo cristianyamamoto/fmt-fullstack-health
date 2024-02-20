@@ -13,12 +13,10 @@ console.log("Lista menores de idade:", menoresIdade);
 const anosParaMaioridade = menoresIdade.map((idade) => 18 - idade);
 console.log("Lista anos para maioridade:", anosParaMaioridade);
 
-// Ex. 4
+// Ex. 4 (anterior, atual, index, arrayInicial)
 const listaReduce = [1, 22, 31, 40, 3, 5];
 const maiorNumero = listaReduce.reduce(
-    (anterior, atual, index, arrayInicial) => {
-        // console.log(index);
-        // console.log(arrayInicial);
+    (anterior, atual) => {
         if (anterior > atual) {
             return anterior;
         } else {
@@ -27,3 +25,13 @@ const maiorNumero = listaReduce.reduce(
     }, 0
 );
 console.log("Maior número da lista:", maiorNumero);
+
+// Ex. Extra
+const viuSeteAUm = idades.map((idade) => {
+    if (idade > 10){
+        return "Viu 7x1"
+    } else{
+        return "Não viu 7x1"
+    }
+});
+console.log(viuSeteAUm);

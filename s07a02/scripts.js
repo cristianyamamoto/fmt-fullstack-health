@@ -42,11 +42,7 @@ let array = [
 ];
 
 // Ex. 1
-const maioresIdade = array.filter((objeto) => {
-    if (objeto.idade >= 18){
-        return objeto;
-    }
-});
+const maioresIdade = array.filter((objeto) => objeto.idade >= 18);
 console.log("Pessoas maiores de idade: ");
 maioresIdade.forEach(objeto => console.log(objeto));
 
@@ -62,8 +58,8 @@ const menoresIdade = array.filter((objeto) => objeto.idade < 18);
 console.log("Pessoas menores de idade: ");
 menoresIdade.forEach(objeto => console.log(objeto));
 
-const anosParaMaioridade = menoresIdade.map((objeto) => objeto.anosParaMaioridade = 18 - objeto.idade);
-console.log("Adicionando anos para maioridade: ");
+menoresIdade.forEach((objeto) => objeto.anosParaMaioridade = 18 - objeto.idade);
+console.log("Adicionando propriedade anos para maioridade: ");
 menoresIdade.forEach(objeto => console.log(objeto));
 
 

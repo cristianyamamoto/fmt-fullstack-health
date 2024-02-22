@@ -11,9 +11,11 @@
 </head>
 
 <body>
-    <h1>Cadastre-se</h1>
+    <h1>Cadastro, Consulta de Saldo, Saque e Depósito</h1>
 
     <form id="formularioCadastro">
+    <fieldset>
+        <legend>Cadastrar Cliente</legend>
         <label>Nome Completo: </label>
         <input id="nome" type="text" required/>
         <br>
@@ -27,6 +29,46 @@
         <br>
 
         <button id="botaoCadastrar" type="submit">Cadastrar</button>
+    </fieldset>
+    </form>
+
+    <fieldset>
+    <legend>Consultar Saldo</legend>
+    <select id="contasSaldo">
+        <option value="selecioneConta" selected>- selecione a conta para consulta -</option>
+    </select>
+    <br>
+    <label>Saldo: </label>
+    <input id="consultaSaldo" type="number" readonly/>
+    <br>
+    </fieldset>
+
+    <form id="formularioSaque">
+    <fieldset>
+        <legend>Saque</legend>
+        <select id="contasSaque">
+            <option value="selecioneConta" selected>- selecione a conta para saque -</option>
+        </select>
+        <br>
+        <label>Selecione o valor a ser sacado: </label>
+        <input id="qtdSaque" type="number" required/>
+        <br>
+        <button id="botaoSacar" type="submit">Sacar</button>
+    </fieldset>
+    </form>
+
+    <form id="formularioDeposito">
+    <fieldset>
+        <legend>Depósito</legend>
+        <select id="contasDeposito">
+            <option value="selecioneConta" selected>- selecione a conta para depósito -</option>
+        </select>
+        <br>
+        <label>Selecione o valor a ser depositado: </label>
+        <input id="qtdDeposito" type="number" required/>
+        <br>
+        <button id="botaoDepositar" type="submit">Depositar</button>
+    </fieldset>
     </form>
 
 </body>

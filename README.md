@@ -65,3 +65,24 @@
 
 * [GitHub Folders - s06a03](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s06a03)
 * [GitHub Pages - s06a03](https://cristianyamamoto.github.io/fmt-fullstack-health/s06a03/)
+
+## S07A01 - Prática de Métodos de Array 
+
+* [GitHub Folders - s07a01](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s07a01)
+
+## S07A02 - Prática de Manipulação de Objetos
+
+* [GitHub Folders - s07a02](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s07a02)
+* [GitHub Pages - s07a02](https://cristianyamamoto.github.io/fmt-fullstack-health/s07a02/)
+
+## S07A03 - Aplicação Bancária 1
+
+* Primeira solução, sem composição de classes
+* [GitHub Folders - s07a03](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s07a03)
+* [GitHub Pages - s07a03](https://cristianyamamoto.github.io/fmt-fullstack-health/s07a03/)
+
+## S07A03 - Aplicação Bancária 2
+
+* Segunda solução, com composição de classes
+* [GitHub Folders - s07a05](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s07a05)
+* [GitHub Pages - s07a05](https://cristianyamamoto.github.io/fmt-fullstack-health/s07a05/)

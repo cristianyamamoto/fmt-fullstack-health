@@ -20,7 +20,7 @@
 ## S04A04 - Space Invaders
 
 * [GitHub Folders - s04a04](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s04a04)
-* [GitHub Pages - s04a04](https://cristianyamamoto.github.io/fmt-fullstack-health/s03a02/)
+* [GitHub Pages - s04a04](https://cristianyamamoto.github.io/fmt-fullstack-health/s04a04/)
 
 ## S04A05 - Snake Game
 
@@ -81,7 +81,7 @@
 * [GitHub Folders - s07a03](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s07a03)
 * [GitHub Pages - s07a03](https://cristianyamamoto.github.io/fmt-fullstack-health/s07a03/)
 
-## S07A03 - Aplicação Bancária 2
+## S07A05 - Aplicação Bancária 2
 
 * Segunda solução, com composição de classes
 * [GitHub Folders - s07a05](https://github.com/cristianyamamoto/fmt-fullstack-health/tree/main/s07a05)

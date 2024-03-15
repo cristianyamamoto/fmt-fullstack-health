@@ -1,4 +1,6 @@
-<p>home works!</p>
+<app-card *ngFor="let produto of listaProdutosFiltrada" [fruit]="produto"></app-card>
 
-<app-card *ngFor="let produto of listaProdutos" [fruit]="produto"></app-card>
-<!-- <app-card (nomeProdutoAlterado)="funcaoCallback()"></app-card> -->
+<div>
+    <input type="text" [(ngModel)]="inputPesquisa">
+    <button (click)="pesquisar()">Pesquisar</button>
+</div>

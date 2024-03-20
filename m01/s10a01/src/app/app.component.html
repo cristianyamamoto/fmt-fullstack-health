@@ -1,0 +1,24 @@
+<p>
+  {{ "100000ms" | millisecondsToSeconds }}
+</p>
+
+<div>
+  <input type="number" [(ngModel)]="n1">
+  <input type="number" [(ngModel)]="n2">
+  <button (click)="calculate()">Calculate</button>
+</div>
+
+<ul>
+  <li>
+    Sum: {{ sum }}
+  </li>
+  <li>
+    Subtract: {{ subtract }}
+  </li>
+  <li>
+    Divide: {{ divide }}
+  </li>
+  <li>
+    Multiply: {{ multiply }}
+  </li>
+</ul>

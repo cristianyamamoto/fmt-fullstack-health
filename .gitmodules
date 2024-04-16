@@ -1,3 +1,6 @@
 [submodule "m01/s09a05/keep-health"]
 	path = m01/s09a05/keep-health
 	url = https://github.com/cristianyamamoto/keep-health
+[submodule "m01/labmedical"]
+	path = m01/labmedical
+	url = https://github.com/cristianyamamoto/labmedical

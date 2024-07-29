@@ -26,4 +26,5 @@ public interface DoctorRepository extends JpaRepository<DoctorModel, Long> {
             String nome, LocalDate dataNascimento, Pageable page
     );
 
+    boolean existsByCrm(String crm);
 }

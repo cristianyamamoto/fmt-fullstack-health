@@ -9,6 +9,7 @@ import br.senai.lab365.doctor_registration.models.DoctorModel;
 import br.senai.lab365.doctor_registration.models.Especialidade;
 import br.senai.lab365.doctor_registration.repositories.DoctorRepository;
 import jakarta.persistence.EntityNotFoundException;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -26,7 +27,11 @@ public class DoctorService {
     }
 
     public void register(DoctorRequest request) {
-        repository.save(DoctorMapper.map(request));
+        if(!repository.existsByCrm(request.getCrm())) {
+            repository.save(DoctorMapper.map(request));
+        } else {
+            throw new DuplicateKeyException("Unable to create doctor, CRM already registered.");
+        }
     }
 
     public void update(Long id, DoctorRequest request) {

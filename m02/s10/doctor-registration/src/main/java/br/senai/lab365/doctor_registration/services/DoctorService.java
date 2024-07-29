@@ -78,4 +78,12 @@ public class DoctorService {
         DoctorModel doctor = repository.findById(id).orElseThrow(EntityNotFoundException::new);
         return DoctorMapper.getMap(doctor);
     }
+
+    public void delete(Long id) {
+        if (repository.existsById(id)){
+            repository.deleteById(id);
+        } else {
+            throw new EntityNotFoundException("Doctor ID not found!");
+        }
+    }
 }

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/doctor")
 public class DoctorController {
 
-    private DoctorService service;
+    private final DoctorService service;
 
     public DoctorController(DoctorService service) {
         this.service = service;
@@ -45,6 +45,12 @@ public class DoctorController {
     @GetMapping("/{id}")
     public ResponseEntity<DoctorResponse> get(@PathVariable Long id){
         return ResponseEntity.ok(service.get(id));
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable Long id){
+        service.delete(id);
     }
 
 }

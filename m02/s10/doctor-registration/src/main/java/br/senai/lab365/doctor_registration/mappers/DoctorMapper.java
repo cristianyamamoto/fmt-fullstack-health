@@ -1,6 +1,7 @@
 package br.senai.lab365.doctor_registration.mappers;
 
 import br.senai.lab365.doctor_registration.dtos.DoctorRequest;
+import br.senai.lab365.doctor_registration.dtos.DoctorSummary;
 import br.senai.lab365.doctor_registration.models.DoctorModel;
 
 public class DoctorMapper {
@@ -25,5 +26,14 @@ public class DoctorMapper {
         doctor.setTelefone(request.getTelefone());
         doctor.setEspecialidade(request.getEspecialidade());
         return doctor;
+    }
+
+    public static DoctorSummary summaryMap(DoctorModel doctor){
+        if (doctor == null) return null;
+        DoctorSummary summary = new DoctorSummary();
+        summary.setNome(doctor.getNome());
+        summary.setDataNascimento(doctor.getDataNascimento());
+        summary.setEspecialidade(doctor.getEspecialidade());
+        return summary;
     }
 }

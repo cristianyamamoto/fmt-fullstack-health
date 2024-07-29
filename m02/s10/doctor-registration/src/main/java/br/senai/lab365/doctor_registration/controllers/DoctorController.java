@@ -22,4 +22,10 @@ public class DoctorController {
         service.register(request);
     }
 
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void update(@PathVariable Long id, @RequestBody DoctorRequest request) {
+        service.update(id, request);
+    }
+
 }

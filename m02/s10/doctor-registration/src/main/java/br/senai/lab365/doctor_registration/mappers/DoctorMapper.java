@@ -16,4 +16,14 @@ public class DoctorMapper {
         target.setEspecialidade(request.getEspecialidade());
         return target;
     }
+
+    public static DoctorModel updateMap(DoctorRequest request, DoctorModel doctor){
+        if (request == null) return null;
+        doctor.setNome(request.getNome());
+        doctor.setCrm(request.getCrm());
+        doctor.setDataNascimento(request.getDataNascimento());
+        doctor.setTelefone(request.getTelefone());
+        doctor.setEspecialidade(request.getEspecialidade());
+        return doctor;
+    }
 }

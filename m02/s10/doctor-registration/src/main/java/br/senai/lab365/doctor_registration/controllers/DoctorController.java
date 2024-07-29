@@ -2,6 +2,7 @@ package br.senai.lab365.doctor_registration.controllers;
 
 import br.senai.lab365.doctor_registration.dtos.DoctorFilter;
 import br.senai.lab365.doctor_registration.dtos.DoctorRequest;
+import br.senai.lab365.doctor_registration.dtos.DoctorResponse;
 import br.senai.lab365.doctor_registration.dtos.DoctorSummary;
 import br.senai.lab365.doctor_registration.services.DoctorService;
 import jakarta.validation.Valid;
@@ -39,6 +40,11 @@ public class DoctorController {
             Pageable page
     ){
         return ResponseEntity.ok(service.list(filter, page));
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<DoctorResponse> get(@PathVariable Long id){
+        return ResponseEntity.ok(service.get(id));
     }
 
 }

@@ -2,6 +2,7 @@ package br.senai.lab365.doctor_registration.services;
 
 import br.senai.lab365.doctor_registration.dtos.DoctorFilter;
 import br.senai.lab365.doctor_registration.dtos.DoctorRequest;
+import br.senai.lab365.doctor_registration.dtos.DoctorResponse;
 import br.senai.lab365.doctor_registration.dtos.DoctorSummary;
 import br.senai.lab365.doctor_registration.mappers.DoctorMapper;
 import br.senai.lab365.doctor_registration.models.DoctorModel;
@@ -71,5 +72,10 @@ public class DoctorService {
         }
 
         return filteredDoctors.map(DoctorMapper::summaryMap);
+    }
+
+    public DoctorResponse get(Long id) {
+        DoctorModel doctor = repository.findById(id).orElseThrow(EntityNotFoundException::new);
+        return DoctorMapper.getMap(doctor);
     }
 }

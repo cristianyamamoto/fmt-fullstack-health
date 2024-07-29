@@ -1,0 +1,9 @@
+version: '3'
+
+services: # definição dos serviços = container
+  database: # nome do serviço/container
+    image: 'postgres:latest' # imagem, ou do docker hub ou local
+    ports:                   # faz a ponte entre a porta_externa:port_interna
+      - 15432:5432           # 15432(sistema) -> 5432(docker)
+    environment:             # Define as variáveis de ambiente do container, varia para cada imagem 
+      POSTGRES_USER: username # The PostgreSQL user (useful to connect to the database)
